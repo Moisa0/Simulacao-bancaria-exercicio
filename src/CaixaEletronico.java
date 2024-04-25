@@ -5,9 +5,15 @@ public class CaixaEletronico {
 
         Scanner lendoSeguinte = new Scanner(System.in);
 
-        String nome = "Moisa";
-        String tipoDeConta = "corrente";
-        double saldoConta = 2500;
+        System.out.println("Qual seu nome?");
+        String nome = lendoSeguinte.nextLine();
+
+        System.out.println("Para abrir uma conta corrente, digite: corrente");
+        String tipoDeConta = lendoSeguinte.nextLine();
+
+        System.out.println("Qual seu saldo incial da conta?");
+        double saldoConta = lendoSeguinte.nextDouble();
+
 
         int opcaoEscolhida = 0;
 
